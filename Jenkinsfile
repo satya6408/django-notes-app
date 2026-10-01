@@ -44,7 +44,15 @@ pipeline {
                     
             }
         }
+stage('Deploy') {
+    steps {
+        echo 'This is deploying the code'
 
+        script {
+            docker_compose()
+        }
+    }
+}
         
     }
 }
