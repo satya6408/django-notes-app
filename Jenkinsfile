@@ -45,13 +45,6 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
-    steps {
-
-        script {
-                    docker_compose()
-        }
-    }
-}
+        
     }
 }
